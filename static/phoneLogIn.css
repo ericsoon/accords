@@ -1,0 +1,68 @@
+body{
+    position: relative;
+    width: 414px;
+    height: 896px;
+    
+    background: url(photos/PhoneBg.jpg) no-repeat;
+}
+
+
+/* ////////////////////////////// Profile circle ////////////////////////////// */
+#profileCircle{
+position: absolute;
+width: 47.17px;
+height: 50px;
+left: calc(50% - 47.17px/2 - 0.42px);
+top: calc(50% - 50px/2 - 125px);
+border-radius: 25px;
+background: #FFFFFF;
+}
+
+/* ////////////////////////////// Profile icon ////////////////////////////// */
+#profileIcon{
+position: absolute;
+width: 24px;
+height: 24px;
+left: calc(50% - 24px/2);
+top: calc(50% - 24px/2 - 125px);
+}
+
+/* ////////////////////////////// Username or Email & Password form ////////////////////////////// */
+#userIdForm, #passForm{
+position: absolute;
+width: 320px;
+height: 48px;
+left: 47px;
+text-align: center;
+background: #FFFFFF;
+border-radius: 8px;
+}
+#userIdForm{top: 398px;}
+#passForm{top: 488px;}
+
+/* ////////////////////////////// Sign up & Log in button ////////////////////////////// */
+#signUp, #logIn{
+position: absolute;
+width: 86px;
+height: 26px;
+top: 573px;    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    /* identical to box height, or 25px */
+    text-align: center;
+    letter-spacing: -0.41px;
+    text-decoration-line: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+}
+#signUp:hover, #logIn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#signUp:active, #logIn:active{top:575px}
+#signUp{left: 130px;}
+#logIn{left: 216px;}

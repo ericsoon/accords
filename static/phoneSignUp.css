@@ -1,0 +1,119 @@
+body{
+    position: relative;
+    width: 414px;
+    height: 896px;
+    
+    background: url(photos/PhoneBg.jpg) no-repeat;}
+    
+    /* Username form */
+    
+    #id_username{
+    position: absolute;
+    width: 320px;
+    height: 48px;
+    left: 47px;
+    top: 291px;
+    
+    padding-left: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;}
+
+    
+    /* Email form */
+    
+    #id_email{
+    position: absolute;
+    width: 320px;
+    height: 48px;
+    left: 47px;
+    top: 381px;
+    
+    padding-left: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;}
+    
+    
+    /* Password form */
+    
+    #id_password1{
+    position: absolute;
+    width: 320px;
+    height: 48px;
+    left: 47px;
+    top: 471px;
+    
+    padding-left: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;}
+    
+    
+    /* Confirm password form */
+    
+    #id_password2{
+    position: absolute;
+    width: 320px;
+    height: 48px;
+    left: 47px;
+    top: 561px;
+    
+    padding-left: 10px;
+    background: #FFFFFF;
+    border-radius: 8px;}
+    
+    
+    /* Sign up button */
+    
+    #signUp{
+    position: absolute;
+    width: 86px;
+    height: 26px;
+    left: 164px;
+    top: 651px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 150%;
+    /* identical to box height, or 25px */
+    text-align: center;
+    letter-spacing: -0.41px;
+    text-decoration-line: none;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;}
+    
+    #signUp:hover{
+    text-decoration: underline;
+    cursor: pointer;}
+    
+    
+    
+    /* Login button */
+    
+    #logIn{
+    position: absolute;
+    height: 70px;
+    left: 107px;
+    right: 107px;
+    top: 785px;
+    color: #b2b2b2;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: -0.41px;}
+    
+    a{
+    color: #b2b2b2;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: -0.41px;}
+    
+    a:hover{
+        color: black;
+        text-decoration: underline;
+        cursor: pointer;
+    }
