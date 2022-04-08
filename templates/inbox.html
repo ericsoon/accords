@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link rel="stylesheet" href="{% static 'inboxStyles.css' %}">
+    
     <title>Inbox</title>
 </head>
 <body>
     <header class="top">
-        <span id = "hello-msg">Hello, {{request.user}}</span>
-        <div ><button class="inboxButton">inbox</button></div>
-        <div><a href="profile.html" id="profile"><button class="profileButton">profile</button></a></div>
+        <!-- <div ><button class="inboxButton">Inbox</button></div> -->
+        <div><a href="profile.html" id="profile"><button class="profileButton">Profile</button></a></div>
     </header>
     
     <aside>
@@ -31,8 +31,8 @@
             <div class="c-9"> <!-- DM container -->
                 <div class="c-10"> <!-- header -->
                     <div class="c-11">
-                        <div class="profilePic">Profile Pic</div>
-                        <div class="profileName">Profile Name</div>
+                        <div class="profilePic"></div>
+                        <div class="profileName">Ekian</div>
                     </div> <!-- profile and name -->
                     <div class="c-12"><!-- info -->
                         <button>i</button>
@@ -55,14 +55,14 @@
         </div>
         <div class="container-inbox">
             <div class="container-inbox-header">
-                <button class="inbox-back"><-</button>
+                <a href="homeNew.html"><button class="inbox-back"><-</button></a>
                 <h1 id="inbox-header">Inbox</h1>
             </div>
             <div class="inbox-contacts">
                 <div class="row-1">
                     <div class="six">
                         <div class="seven"></div>
-                        <div class="eight"></div>
+                        <div class="eight">Ekian</div>
                     </div>
                     <div class="six">
                         <div class="seven"></div>

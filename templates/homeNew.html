@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'homeNewStyles.css' %}">
+    <title>Home New</title>
+    <script src="{% static 'homeNew.js' %}"></script>
+</head>
+<body>
+    <header class="top">
+        <div ><button onclick="show_hide()" id="inboxButton">Inbox</button></div>
+        <div><a href="profile.html" id="profile"><button class="profileButton">Profile</button></a></div>
+    </header>
+    
+    <aside>
+        <div class="aside-top-3">
+            <div><button class="searchButton">Search</button></div>
+            <div><button class="discoverButton">Discover</button></div>
+            <div><button class="trendingButton">Trending</button></div>
+        </div>
+        <div class="aside-bottom-2">
+            <div><button class="helpButton">Help</button></div>
+            <div><button class="settingsButton">Settings</button></div>
+        </div>
+    </aside>
+    <div class="main-content">
+        <div class="post">
+            <div class="post-viewport">
+                <div class="play"><button>play</button></div>
+            </div>
+            <div class="post-footer">
+                <div class="post-owner">
+                    <div class="post-profile-pic"></div>
+                    <div class="post-username">Ekian</div>
+                </div>
+                <div class="post-description">
+                    <div class="post-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis ratione suscipit! Modi maiores dolor eius numquam eveniet pariatur magni facilis sed recusandae at explicabo accusamus nobis enim sit unde voluptatibus quas ipsa necessitatibus repudiandae mollitia, maxime eligendi quisquam ex! Eos in nesciunt sunt accusamus rerum velit ea iste, voluptate eum, at, temporibus atque molestias saepe voluptatibus quae rem laudantium voluptatum odit facilis exercitationem non ad corporis animi. Earum doloremque exercitationem impedit atque alias minima adipisci nihil itaque tempore molestiae deserunt nobis, ad praesentium! Debitis animi blanditiis sapiente tenetur quis voluptate modi labore pariatur beatae vel? Id veritatis laborum quae!</div>
+                </div>
+                <div class="post-info">
+                    <div class="post-stats">
+                        <div class="post-comments">comments</div>
+                        <div class="post-likes">likes</div>
+                        <div class="post-shares">shares</div>
+                    </div>
+                    <div class="post-date">just now</div>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-viewport">
+                <div class="play"><button>play</button></div>
+            </div>
+            <div class="post-footer">
+                <div class="post-owner">
+                    <div class="post-profile-pic"></div>
+                    <div class="post-username">Complex</div>
+                </div>
+                <div class="post-description">
+                    <div class="post-caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam adipisci asperiores, nulla ipsa atque ab quo vitae facilis! Error, laborum.</div>
+                </div>
+                <div class="post-info">
+                    <div class="post-stats">
+                        <div class="post-comments">comments</div>
+                        <div class="post-likes">likes</div>
+                        <div class="post-shares">shares</div>
+                    </div>
+                    <div class="post-date">3 hours ago</div>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-viewport">
+                <div class="play"><button>play</button></div>
+            </div>
+            <div class="post-footer">
+                <div class="post-owner">
+                    <div class="post-profile-pic"></div>
+                    <div class="post-username">Cold Assassin</div>
+                </div>
+                <div class="post-description">
+                    <div class="post-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a accusamus placeat eligendi ipsa dignissimos, ut distinctio quos tenetur, totam dolor excepturi impedit nisi! Illo error officia, tempore impedit ratione recusandae laboriosam vitae eum libero minima placeat perspiciatis, excepturi eligendi consequuntur nostrum voluptas nobis ipsum corporis dicta veritatis rem totam.</div>
+                </div>
+                <div class="post-info">
+                    <div class="post-stats">
+                        <div class="post-comments">comments</div>
+                        <div class="post-likes">likes</div>
+                        <div class="post-shares">shares</div>
+                    </div>
+                    <div class="post-date">1 day ago</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="container-inbox">
+            <div class="container-inbox-header">
+                <button onclick="show_hide()" class="inbox-back"><-</button>
+                <h1 id="inbox-header">Inbox</h1>
+            </div>
+            <div class="inbox-contacts">
+                <div class="row-1">
+                    <a href="{% url 'inbox' %}">
+                        <div class="six">
+                            <div class="seven"></div>
+                            <div class="eight">Ekian</div>
+                        </div>
+                    </a>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-4">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-5">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-6">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-7">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-8">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+                <div class="row-9">
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                    <div class="six">
+                        <div class="seven"></div>
+                        <div class="eight"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="one">
+                <div class="two">
+                    <div class="three"> <input type="text" name="" id="" placeholder="Search..." maxlength="20"> </div>
+                    <div class="four"> <button id="new">Search</button> </div>
+                </div> 
+            </div>
+    </div>
+</body>
+</html>
