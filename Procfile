@@ -1,0 +1,1 @@
+web gunicorn LIVECHAT.wsgi:application --log-file -
