@@ -14,6 +14,8 @@ def home(request):
 def inbox(request):
     return render(request, 'inbox.html')
 
+
+
 def loginpage(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -23,7 +25,7 @@ def loginpage(request):
 
         if user is not None:
             login(request, user)
-            return redirect('inbox')
+            return redirect('home')
         else:
             messages.info(request, 'Username or Passowrd is incorrect')
             return render(request, 'login.html')
@@ -41,3 +43,5 @@ def register(request):
         form = createuserform()
 
     return render(request, 'signUp.html', {'form':form})
+
+    
